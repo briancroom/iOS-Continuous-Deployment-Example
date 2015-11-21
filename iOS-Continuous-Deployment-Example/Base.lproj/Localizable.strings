@@ -2,3 +2,4 @@
 "buttonTitle" = "Tap me!";
 "countLabelText" = "Count: %ld";
 "enteredLabelText" = "Text: '%@' (length: %ld)";
+"anotherString" = "Cool huh?";
