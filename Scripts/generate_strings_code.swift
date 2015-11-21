@@ -1,0 +1,1 @@
+../GenerateStringsCode/main.swift
