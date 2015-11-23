@@ -315,7 +315,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "BASE=\"${SRCROOT}/${TARGET_NAME}\"\n\"${SRCROOT}/GenerateStringsCode/main.swift\" \"${BASE}/Base.lproj/Localizable.strings\" > \"${BASE}/Strings.swift\"";
+			shellScript = "# Ensure that the swift compiler uses the Mac SDK instead of an iOS one\nSDKROOT=$(xcrun --show-sdk-path --sdk macosx)\n\nBASE=\"${SRCROOT}/${TARGET_NAME}\"\n\"${SRCROOT}/GenerateStringsCode/main.swift\" \"${BASE}/Base.lproj/Localizable.strings\" > \"${BASE}/Strings.swift\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
