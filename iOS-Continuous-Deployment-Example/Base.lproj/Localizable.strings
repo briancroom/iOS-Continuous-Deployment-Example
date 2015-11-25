@@ -1,5 +1,5 @@
 "homeTitle" = "Home 😀";
 "buttonTitle" = "Tap me!";
-"countLabelText" = "Count: %ld"; // count
-"enteredLabelText" = "Text: '%@' (length: %ld)"; // text, length
-"instructionsText" = "What to do?";
+"countLabelText" = "Count: %@"; // count
+"enteredLabelText" = "Text: '%@' (length: %@)"; // text, length
+"instructionsText" = "Cool huh?";
