@@ -2,6 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var instructionsLabel: UILabel!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var enteredTextLabel: UILabel!
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        instructionsLabel.text = Strings.instructionsText;
         button.setTitle(Strings.buttonTitle, forState: .Normal)
         updateCount()
         updateEnteredText()

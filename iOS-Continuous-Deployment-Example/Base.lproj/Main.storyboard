@@ -33,27 +33,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiS-Vi-y1x">
+                                <rect key="frame" x="279" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLZ-0D-lld">
-                                <rect key="frame" x="277" y="101" width="46" height="30"/>
+                                <rect key="frame" x="277" y="142" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonTapped" destination="Zhh-uz-07E" eventType="touchUpInside" id="2xl-LD-MGz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O06-7R-wx7">
-                                <rect key="frame" x="279" y="72" width="42" height="21"/>
+                                <rect key="frame" x="279" y="113" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqX-Aq-Xb9">
-                                <rect key="frame" x="279" y="231" width="42" height="21"/>
+                                <rect key="frame" x="279" y="272" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ed-gk-FAl">
-                                <rect key="frame" x="225" y="260" width="150" height="30"/>
+                                <rect key="frame" x="225" y="301" width="150" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="htY-Sf-dXJ"/>
                                 </constraints>
@@ -67,12 +73,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XLZ-0D-lld" firstAttribute="top" secondItem="O06-7R-wx7" secondAttribute="bottom" constant="8" id="4le-MB-AcC"/>
+                            <constraint firstItem="wiS-Vi-y1x" firstAttribute="top" secondItem="ZhS-DA-eWj" secondAttribute="bottom" constant="8" id="7Jq-Xe-7yc"/>
+                            <constraint firstItem="O06-7R-wx7" firstAttribute="top" secondItem="wiS-Vi-y1x" secondAttribute="bottom" constant="20" id="BYb-H0-7gE"/>
                             <constraint firstItem="XLZ-0D-lld" firstAttribute="centerX" secondItem="xpY-1g-N8i" secondAttribute="centerX" id="JOq-Wy-U7V"/>
                             <constraint firstItem="O06-7R-wx7" firstAttribute="centerX" secondItem="xpY-1g-N8i" secondAttribute="centerX" id="LNu-5Z-IPb"/>
                             <constraint firstItem="2ed-gk-FAl" firstAttribute="centerX" secondItem="xpY-1g-N8i" secondAttribute="centerX" id="N1V-3x-kYZ"/>
                             <constraint firstItem="2ed-gk-FAl" firstAttribute="top" secondItem="jqX-Aq-Xb9" secondAttribute="bottom" constant="8" id="T3E-U2-u9m"/>
                             <constraint firstItem="jqX-Aq-Xb9" firstAttribute="centerX" secondItem="xpY-1g-N8i" secondAttribute="centerX" id="TVw-o4-ioW"/>
-                            <constraint firstItem="O06-7R-wx7" firstAttribute="top" secondItem="ZhS-DA-eWj" secondAttribute="bottom" constant="8" id="gE3-g4-V3n"/>
+                            <constraint firstItem="wiS-Vi-y1x" firstAttribute="centerX" secondItem="xpY-1g-N8i" secondAttribute="centerX" id="eDF-qp-fnZ"/>
                             <constraint firstItem="jqX-Aq-Xb9" firstAttribute="top" secondItem="XLZ-0D-lld" secondAttribute="bottom" constant="100" id="gL6-kd-eUb"/>
                         </constraints>
                     </view>
@@ -81,6 +89,7 @@
                         <outlet property="button" destination="XLZ-0D-lld" id="AOe-zu-mSH"/>
                         <outlet property="countLabel" destination="O06-7R-wx7" id="eRw-Eq-2gA"/>
                         <outlet property="enteredTextLabel" destination="jqX-Aq-Xb9" id="gCl-Nb-aQm"/>
+                        <outlet property="instructionsLabel" destination="wiS-Vi-y1x" id="FFP-VZ-zpa"/>
                         <outlet property="textField" destination="2ed-gk-FAl" id="Goe-c5-K8b"/>
                     </connections>
                 </viewController>
