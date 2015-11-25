@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     }
 
     private func updateCount() {
-        countLabel.text = Strings.countLabelText(count: count)
+        countLabel.text = Strings.countLabelText(count: String(count))
     }
 
     private func updateEnteredText() {
         let text = textField.text ?? ""
-        enteredTextLabel.text = Strings.enteredLabelText(text: text, length: text.characters.count)
+        enteredTextLabel.text = Strings.enteredLabelText(text: text, length: String(text.characters.count))
     }
 }
