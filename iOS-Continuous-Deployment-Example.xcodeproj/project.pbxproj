@@ -238,6 +238,7 @@
 				TargetAttributes = {
 					3467B5E61BFFD1DF001589D6 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = BVZYXK966R;
 					};
 					3467B5FA1BFFD1E0001589D6 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -484,7 +485,7 @@
 		3467B6051BFFD1E0001589D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iOS-Continuous-Deployment-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.briancroom.iOS-Continuous-Deployment-Example";
@@ -495,7 +496,7 @@
 		3467B6061BFFD1E0001589D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iOS-Continuous-Deployment-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.briancroom.iOS-Continuous-Deployment-Example";
