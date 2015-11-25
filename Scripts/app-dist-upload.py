@@ -58,5 +58,5 @@ if __name__ == '__main__':
 		upload_file_to_build(build_id, path)
 		print("Done uploading")
 
-    print "The new build can be accessed at: "+url_for_build(build_id)
+	print "The new build can be accessed at: "+url_for_build(build_id)
 	# open_url(url_for_build(build_id))
