@@ -10,6 +10,8 @@ deploy:
   provider: script
   script: ./Scripts/travis/upload-build.sh
   skip_cleanup: true
+after_deploy:
+- ./Scripts/travis/notify-slack.sh
 after_script:
 - ./Scripts/travis/remove-key.sh
 # The necessary secure environment variables are: APP_DISTRIBUTION_TOKEN SIGNING_KEY_PASSWORD
